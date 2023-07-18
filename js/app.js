@@ -215,5 +215,7 @@ function eliminarGasto(e) {
 
         // Eliminar del DOM
         e.target.parentElement.remove();
+
+        ui.actualizarRestante(presupuesto);
     } 
 }
