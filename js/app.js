@@ -212,10 +212,11 @@ function eliminarGasto(e) {
         // Pasar la cantidad restante para actualizar el DOM
         const { restante } = presupuesto;
         ui.actualizarRestante(restante);
-
+        
         // Eliminar del DOM
         e.target.parentElement.remove();
 
-        ui.actualizarRestante(presupuesto);
+        ui.comprobarPresupuesto(presupuesto);
+
     } 
 }
